@@ -66,11 +66,9 @@ Visit http://localhost:8000.
 
 ## Live Website
 
-**Live URL:** To be added after deployment.
+**Live URL:** https://sharmaneha19.github.io/prodesk-it-landing-page/
 
 ## Screenshot
-
-Add a screenshot of the deployed website here:
 
 ![Prodesk IT Landing Page](assets/prodesk-preview.png)
 
