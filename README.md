@@ -66,7 +66,7 @@ Visit http://localhost:8000.
 
 ## Live Website
 
-**Live URL:** https://sharmaneha19.github.io/prodesk-it-landing-page/
+**Live URL:** https://prodesk-it-landing-page-flp24504o-sharmaneha19.vercel.app
 
 ## Screenshot
 <img width="1366" height="768" alt="prodesk-preview" src="https://github.com/user-attachments/assets/ace8e29c-288e-46a3-b4aa-190d378e8aac" />
