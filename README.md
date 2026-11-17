@@ -69,8 +69,8 @@ Visit http://localhost:8000.
 **Live URL:** https://sharmaneha19.github.io/prodesk-it-landing-page/
 
 ## Screenshot
+<img width="1366" height="768" alt="prodesk-preview" src="https://github.com/user-attachments/assets/ace8e29c-288e-46a3-b4aa-190d378e8aac" />
 
-![Prodesk IT Landing Page](assets/prodesk-preview.png)
 
 ## Phase 3 – Tailwind CSS
 
