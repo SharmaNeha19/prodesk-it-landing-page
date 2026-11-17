@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Prodesk IT helps ambitious businesses grow with thoughtful web design, search strategy, and digital marketing.">
+  <title>Prodesk IT — Tailwind Edition</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="dist/tailwind.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <nav class="mx-auto flex min-h-[76px] w-[min(1160px,calc(100%-2.25rem))] items-center justify-between gap-6">
+      <a class="brand" href="#home" aria-label="Prodesk IT home"><span class="grid h-7 w-7 place-items-center rounded-lg border border-violet-400 text-mint">✳</span><span>prodesk<span class="brand-accent">IT</span></span></a>
+      <button id="menu-toggle" class="rounded-lg border border-white/20 px-3 py-2 text-xl md:hidden" aria-label="Open navigation menu" aria-expanded="false" aria-controls="nav-panel">☰</button>
+      <div id="nav-panel" class="absolute left-0 right-0 top-[76px] hidden flex-col gap-5 border-b border-white/10 bg-ink p-6 md:static md:flex md:flex-row md:items-center md:border-0 md:bg-transparent md:p-0">
+        <div class="flex flex-col gap-4 md:flex-row md:gap-8">
+          <a class="nav-link" href="#home">Home</a><a class="nav-link" href="#about">About</a><a class="nav-link" href="#services">Services</a><a class="nav-link" href="#contact">Contact</a>
+        </div>
+        <div class="flex items-center gap-4"><button id="theme-toggle" class="rounded-full border border-white/20 px-3 py-2 text-sm" aria-label="Switch theme" aria-pressed="false">◐ Theme</button><a class="button-primary min-h-10 px-4" href="#contact">Let’s talk ↗</a></div>
+      </div>
+    </nav>
+  </header>
+  <main id="main">
+    <section id="home" class="mx-auto grid min-h-[590px] w-[min(1160px,calc(100%-2.25rem))] items-center gap-12 py-20 md:grid-cols-2">
+      <div><p class="mb-6 text-xs font-bold tracking-[.22em] text-mint">✳ YOUR DIGITAL GROWTH PARTNER</p><h1 class="mb-6 font-display text-5xl font-extrabold leading-[1.06] tracking-tight sm:text-6xl lg:text-7xl">Make your next move <span class="gradient-text">digital.</span></h1><p class="mb-8 max-w-xl text-base leading-8 text-slate-400">We turn bold ideas into standout digital experiences that attract the right people, build trust, and move your business forward.</p><div class="flex flex-wrap items-center gap-7"><a class="button-primary" href="#contact">Get started ↗</a><a class="text-sm font-bold" href="#services">Explore our services ↓</a></div></div>
+      <div class="relative grid min-h-[340px] place-items-center"><div class="absolute h-72 w-72 rounded-full bg-violet-500/20 blur-3xl"></div><div class="relative grid h-52 w-52 place-items-center rounded-full border border-white/20 bg-gradient-to-br from-violet-500 to-indigo-950 text-center shadow-2xl shadow-violet-500/20"><span class="text-5xl text-mint">✳</span><span class="text-xs font-bold tracking-[.2em]">GROWTH<br>ENGINEERED</span></div><div class="absolute right-0 top-10 rounded-xl border border-white/10 bg-slate-900/80 p-4 text-sm shadow-xl backdrop-blur">↗ <strong>Digital momentum</strong></div><div class="absolute bottom-10 left-0 rounded-xl border border-white/10 bg-slate-900/80 p-4 text-sm shadow-xl backdrop-blur">▥ <strong>Made for impact</strong></div></div>
+    </section>
+    <section id="about" class="bg-slate-900/70 py-20"><div class="mx-auto grid w-[min(1160px,calc(100%-2.25rem))] gap-8 md:grid-cols-[.6fr_1.4fr]"><p class="text-xs font-bold tracking-[.2em] text-mint">A BETTER WAY FORWARD</p><div><h2 class="mb-5 font-display text-4xl font-extrabold leading-tight sm:text-5xl">Good marketing gets attention. <span class="text-slate-400">Great digital experiences earn it.</span></h2><p class="max-w-3xl leading-8 text-slate-400">Prodesk IT brings strategy, design, and technology together to help brands show up with clarity. From the first click to the lasting connection, we make every digital touchpoint count.</p></div></div></section>
+    <section id="services" class="mx-auto w-[min(1160px,calc(100%-2.25rem))] py-20"><div class="mb-10 flex flex-col justify-between gap-5 md:flex-row md:items-end"><div><p class="mb-4 text-xs font-bold tracking-[.2em] text-mint">WHAT WE DO</p><h2 class="font-display text-4xl font-extrabold sm:text-5xl">Everything you need to <span class="gradient-text">grow online.</span></h2></div><p class="max-w-xs text-sm leading-7 text-slate-400">One connected team. Three powerful ways to build a stronger digital presence.</p></div>
+      <div class="grid gap-4 md:grid-cols-3">
+        <article class="service-card"><div class="mb-10 flex justify-between text-xs font-bold tracking-widest text-slate-400"><span>01 / DISCOVER</span><span class="text-2xl text-mint">⌕</span></div><h3 class="mb-4 font-display text-2xl font-bold">Search Engine<br>Optimization</h3><p class="mb-7 text-sm leading-7 text-slate-400">Get found by the people already looking for what you do. We build a smarter path from search to discovery.</p><a class="card-link" href="#contact">Explore SEO ↗</a></article>
+        <article class="service-card"><div class="mb-10 flex justify-between text-xs font-bold tracking-widest text-slate-400"><span>02 / CREATE</span><span class="text-2xl text-mint">⌘</span></div><h3 class="mb-4 font-display text-2xl font-bold">Web Design<br>& Development</h3><p class="mb-7 text-sm leading-7 text-slate-400">Fast, intuitive, responsive websites that make a memorable first impression and turn visits into action.</p><a class="card-link" href="#contact">Explore web ↗</a></article>
+        <article class="service-card"><div class="mb-10 flex justify-between text-xs font-bold tracking-widest text-slate-400"><span>03 / AMPLIFY</span><span class="text-2xl text-mint">✳</span></div><h3 class="mb-4 font-display text-2xl font-bold">Digital<br>Marketing</h3><p class="mb-7 text-sm leading-7 text-slate-400">Bring your story to the right audience with purposeful campaigns, creative content, and measurable thinking.</p><a class="card-link" href="#contact">Explore marketing ↗</a></article>
+      </div>
+    </section>
+    <section id="contact" class="mx-auto w-[min(1160px,calc(100%-2.25rem))] pb-20"><div class="flex flex-col justify-between gap-8 rounded-2xl bg-gradient-to-r from-indigo-950 via-violet-900 to-teal-800 p-8 sm:p-14 md:flex-row md:items-end"><div><p class="mb-5 text-xs font-bold tracking-widest text-mint">YOUR NEXT CHAPTER STARTS HERE</p><h2 class="font-display text-4xl font-extrabold sm:text-5xl">Ready to make<br><span class="text-mint">something happen?</span></h2></div><div class="max-w-xs"><p class="mb-6 text-sm leading-7 text-white/75">Tell us what you’re building. We’ll bring the digital thinking to help you take it further.</p><a class="inline-flex min-h-12 items-center rounded-lg bg-white px-6 text-sm font-bold text-indigo-950 transition hover:-translate-y-1" href="mailto:hello@prodeskit.com">Get started ↗</a></div></div></section>
+  </main>
+  <footer class="border-t border-white/10 py-8"><div class="mx-auto flex w-[min(1160px,calc(100%-2.25rem))] flex-wrap items-center justify-between gap-5"><a class="brand" href="#home">prodesk<span class="brand-accent">IT</span></a><p class="text-xs text-slate-400">© <span id="year"></span> Prodesk IT. All rights reserved.</p><div class="flex gap-4 text-xs font-bold text-slate-400"><a href="https://www.linkedin.com/" aria-label="LinkedIn">in</a><a href="https://www.instagram.com/" aria-label="Instagram">ig</a><a href="https://www.facebook.com/" aria-label="Facebook">f</a></div></div></footer>
+  <script>
+    const body=document.body, menu=document.querySelector('#menu-toggle'), panel=document.querySelector('#nav-panel'), theme=document.querySelector('#theme-toggle');
+    document.querySelector('#year').textContent=new Date().getFullYear();
+    try { if(localStorage.getItem('prodesk-theme')==='light') body.classList.add('light-theme'); } catch(e) {}
+    theme.addEventListener('click',()=>{body.classList.toggle('light-theme');const light=body.classList.contains('light-theme');theme.setAttribute('aria-pressed',String(light));try{localStorage.setItem('prodesk-theme',light?'light':'dark')}catch(e){}});
+    menu.addEventListener('click',()=>{const open=menu.getAttribute('aria-expanded')!=='true';menu.setAttribute('aria-expanded',String(open));panel.classList.toggle('hidden',!open);panel.classList.toggle('flex',open);menu.textContent=open?'×':'☰';menu.setAttribute('aria-label',open?'Close navigation menu':'Open navigation menu')});
+    panel.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{if(innerWidth<768){panel.classList.add('hidden');panel.classList.remove('flex');menu.setAttribute('aria-expanded','false');menu.textContent='☰'}}));
+  </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Small project-specific component layer; layout and responsive utilities are Tailwind. */
+:root { color-scheme: dark; }
+html { scroll-behavior: smooth; scroll-padding-top: 6rem; }
+body { @apply m-0 bg-ink font-sans text-slate-100 antialiased transition-colors duration-300; }
+body.light-theme { color-scheme: light; @apply bg-slate-50 text-slate-900; }
+.site-header { @apply sticky top-0 z-50 border-b border-white/10 bg-ink/75 backdrop-blur-xl; }
+body.light-theme .site-header { @apply border-slate-900/10 bg-slate-50/80; }
+.brand { @apply inline-flex items-center gap-2 font-display text-2xl font-extrabold tracking-tight; }
+.brand-accent { @apply text-mint; }
+.nav-link { @apply text-sm font-semibold text-slate-400 transition-colors hover:text-white; }
+body.light-theme .nav-link { @apply hover:text-slate-950; }
+.button-primary { @apply inline-flex min-h-12 items-center justify-center gap-4 rounded-lg bg-gradient-to-r from-violet-500 to-violet-700 px-6 text-sm font-bold text-white shadow-lg shadow-violet-900/20 transition duration-200 hover:-translate-y-1 hover:scale-[1.02] hover:shadow-xl; }
+.gradient-text { @apply bg-gradient-to-r from-violet-400 to-mint bg-clip-text text-transparent; }
+.service-card { @apply flex min-h-[300px] flex-col rounded-xl border border-white/10 bg-slate-900 p-7 transition duration-300 hover:-translate-y-2 hover:border-violet-400/70 hover:shadow-2xl; }
+body.light-theme .service-card { @apply border-slate-900/10 bg-white; }
+.card-link { @apply mt-auto inline-flex items-center gap-3 text-xs font-bold text-mint; }
+.skip-link { @apply absolute -top-16 left-4 z-[100] rounded bg-white px-4 py-2 text-ink focus:top-4; }
+:focus-visible { @apply outline outline-2 outline-offset-4 outline-mint; }
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; animation-duration: .01ms !important; }
+}
